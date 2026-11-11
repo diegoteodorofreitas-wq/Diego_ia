@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>DIEGO AI — Atendente virtual</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="logo">D</div>
+      <div><h1>DIEGO AI</h1><p>Atendente virtual para sua loja</p></div>
+      <span class="status">DEMO</span>
+    </header>
+    <section class="intro">
+      <p class="eyebrow">ATENDIMENTO INTELIGENTE</p>
+      <h2>Seu atendimento começa aqui.</h2>
+      <p>Converse com o atendente de demonstração e veja como ele pode apresentar produtos e responder dúvidas.</p>
+    </section>
+    <section class="chat" aria-label="Conversa com o atendente">
+      <div id="messages" class="messages">
+        <div class="bubble bot">Olá! 👋 Sou o atendente virtual da Loja Demonstração. Como posso ajudar?</div>
+      </div>
+      <form id="chatForm">
+        <input id="messageInput" maxlength="1500" placeholder="Digite sua mensagem..." autocomplete="off" required>
+        <button id="sendButton" type="submit">Enviar</button>
+      </form>
+      <p class="hint">Demonstração: não envie dados pessoais, senhas ou informações de pagamento.</p>
+    </section>
+    <section class="products">
+      <h3>Produtos de exemplo</h3>
+      <div id="productList" class="product-list">Carregando produtos…</div>
+    </section>
+    <footer>DIEGO AI · Protótipo inicial — ainda não conectado ao WhatsApp.</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
